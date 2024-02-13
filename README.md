@@ -1,1 +1,1 @@
-# JS_Homework_09.02.2024
+Web store which contains some products and filters. But it's only layot without any links and done filters which works correctly
