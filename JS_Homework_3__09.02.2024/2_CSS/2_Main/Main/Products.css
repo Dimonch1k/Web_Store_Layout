@@ -1,26 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&family=Montserrat:wght@500&display=swap');
-
-
-/*PRODUCTS*/
-.products {
-    float: left;
-}
-
-/*Goods*/
-.product_catalog_ {
-    width: 923px;
-    height: 1425px;
-
-    margin-top: 25px;
-    background-color: whitesmoke;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-}
 
 .grid-item {
     width: 295px;
@@ -59,7 +37,7 @@
     float: left;
 }
 
-.product_new > .span_prod_new {
+.product_new>.span_prod_new {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -105,7 +83,7 @@
     align-items: center;
 }
 
-.product_img > img {
+.product_img>img {
     width: 232px;
     height: 214px;
     display: block;
@@ -204,7 +182,7 @@
     transform: rotate(360deg);
 }
 
-.add_product_to_cart > image {
+.add_product_to_cart>image {
     width: 60px;
     height: 60px;
 }
