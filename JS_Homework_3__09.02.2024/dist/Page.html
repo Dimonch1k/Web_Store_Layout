@@ -11,7 +11,6 @@
 	<link href="/2_CSS/2_Main/Products.css" rel="stylesheet">
 
 	<!--Filters-->
-	<link href="/2_CSS/2_Main/Filter/Filter.css" rel="stylesheet">
 	<link href="/2_CSS/2_Main/Filter/Heading/Heading.css" rel="stylesheet">
 
 	<link href="/2_CSS/2_Main/Filter/Filters/Price.css" rel="stylesheet">
@@ -736,38 +735,39 @@
 			</section>
 
 			<!--FILTER-->
-			<section class="filter">
+			<section class="min-w-[305px] h-max inline-flex flex-col gap-6">
 				<!--Filter heading-->
-				<div class="filter_heading">
-					<div class="filter_heading_label">
-						<span>
+				<div class="w-full h-[54px] px-5 py-[15px] inline-flex justify-between items-center bg-gradient-to-tl from-slate-800 to-slate-700 shadow-black shadow-sm">
+					<span class="font-sans font-bold text-lg text-white">
 							Фільтрування
-						</span>
-						<img src="/IMAGES/2_Main/Filter_images/Bin.png" alt="Remove all filters which user has chose">
-					</div>
+					</span>
+					<img src="/IMAGES/2_Main/Filter_images/Bin.png" alt="Remove all filters which user has chose">
 				</div>
 
 				<!--Filter box-->
-				<div class="filter_box">
-					<div class="filters">
+				<div class="text-white font-normal h-max shadow-md bg-gradient-to-tr from-gray-900 to-slate-800 inline-flex justify-center">
+					<div class="w-full h-max px-5 py-7 inline-flex flex-col gap-6">
 
 						<!--Price tag slider-->
-						<div class="price_tag_slider_filter">
-							<details id="details_price_tag_slider" open>
-								<summary>
+						<div>
+							<details class="w-full h-max inline-flex flex-col items-center"
+							 id="details_price_tab_slider" open>
+								<summary class="mb-2 font-semibold font-sans text-lg w-full cursor-pointer list-none
+								 inline-flex justify-between items-center border-b border-white">
 									Ціна
 								</summary>
 
 								<!--Show from min to max price-->
-								<div class="price-content">
-									<div class="min-value-range">
+								<div class="inline-flex items-center justify-between">
+									<div class="w-[96px] h-[34px] border border-red-700 
+									inline-flex justify-center items-center">
 										<p id="min-value">5000</p>
 									</div>
 
 									<!--Dash-->
-									<p id="dash"></p>
+									<p class="w-[11px] h-0 border border-red-600"></p>
 
-									<div class="max-value-range">
+									<div class="w-[96px] h-[34px] border border-red-700 inline-flex justify-center items-center">
 										<p id="max-value">12000</p>
 									</div>
 								</div>
@@ -784,12 +784,11 @@
 									</label>
 								</div>
 							</details>
-
 						</div>
 
 
 						<!--Material-->
-						<div class="material_filter">
+						<div class="material_filter h-max">
 							<details id="details_material" open>
 								<summary>
 									Матеріал
@@ -938,7 +937,7 @@
 	<footer class="footer">
 		<!--LOGO-->
 		<div class="footer_label_logo">
-			<span>
+			<span class="bg-gradient-to-tr from-red-700 to-red-400 bg-clip-text text-transparent">
 				LOGO
 			</span>
 		</div>
