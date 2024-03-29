@@ -8,12 +8,7 @@
 	<title>HTML_CSS_JS_Homework_09.02.2024</title>
 
 	<!--CSS LINKS-->
-
-	<!--2_Main-->
-	<!-- <link href="/2_CSS/2_Main/Main/Main.css" rel="stylesheet"> -->
-	<!-- <link href="/2_CSS/2_Main/Main/Main_heading.css" rel="stylesheet"> -->
-	<!-- <link href="/2_CSS/2_Main/Main/Hero.css" rel="stylesheet"> -->
-	<link href="/2_CSS/2_Main/Main/Products.css" rel="stylesheet">
+	<link href="/2_CSS/2_Main/Products.css" rel="stylesheet">
 
 	<!--Filters-->
 	<link href="/2_CSS/2_Main/Filter/Filter.css" rel="stylesheet">
@@ -40,697 +35,696 @@
 
 <!--BODY-->
 
-<body class="bg-slate-400">
+<body class="bg-slate-600 w-max">
 	<!--HEADER-->
-	<header class="flex mx-24 py-5 w-max h-max">
+	<header class="inline-flex items-center mx-24 py-5 w-max h-max">
 
 		<!--LOGO-->
-		<span class="font-semibold font-sans text-[32px] text-[#C90000]">
-			LOGO
+		<span
+			class="font-semibold font-sans text-4xl bg-gradient-to-tr from-red-700 to-red-400 bg-clip-text text-transparent">
+			LENOVO
 		</span>
 
 		<!--QUICK INFO BUTTONS-->
-		<div class=" inline-flex flex-row justify-between items-center w-[494px] ml-[125px]">
+		<div class=" inline-flex flex-row justify-between items-center w-[450px] h-max ml-[125px]">
 			<div class="w-max" id="header_catalog">
-				<button class="font-medium text-lg text-[#C90000] border-none cursor-pointer">
-					<span class="font-semibold">
-						Каталог
+				<button
+					class="font-medium text-lg border-none cursor-pointer bg-gradient-to-tr from-red-400 to-red-700 bg-clip-text text-transparent">
+					Каталог
 					</span>
 				</button>
 			</div>
 			<div class="w-max" id="header_about_us">
-				<button class="font-medium text-lg text-[#C90000]  border-none cursor-pointer">
-					<span>
-						Про нас
-					</span>
+				<button
+					class="font-medium text-lg border-none cursor-pointer bg-gradient-to-tr from-red-400 to-red-700 bg-clip-text text-transparent">
+					Про нас
 				</button>
 			</div>
 			<div class="w-max" id="header_faq">
-				<button class="font-medium text-lg text-[#C90000]  border-none cursor-pointer">
-					<span>
-						FAQ
-					</span>
+				<button
+					class="font-medium text-lg border-none cursor-pointer bg-gradient-to-tr from-red-400 to-red-700 bg-clip-text text-transparent">
+					FAQ
 				</button>
 			</div>
 			<div class="w-max" id="header_contacts">
-				<button class="font-medium text-lg text-[#C90000]  border-none cursor-pointer">
-					<span>
-						Контакти
-					</span>
+				<button
+					class="font-medium text-lg border-none cursor-pointer bg-gradient-to-tr from-red-400 to-red-700 bg-clip-text text-transparent">
+					Контакти
 				</button>
 			</div>
 		</div>
 
 		<!--ICONS-->
-		<div class="inline-flex flex-row justify-between items-center w-[113px] ml-32">
-			<div>
-				<span>
-					<img alt="Heart" src="/IMAGES/1_Header/1_header_images/Heart.png">
-				</span>
-			</div>
-			<div>
-				<span>
-					<img alt="Loup to look for something" src="/IMAGES/1_Header/1_header_images/Loup.png">
-				</span>
-			</div>
+		<div class="inline-flex flex-row justify-between items-center w-[113px] h-max ml-32">
+			<span>
+				<img alt="Heart" src="/IMAGES/1_Header/1_header_images/Heart.png">
+			</span>
+			<span>
+				<img alt="Loup to look for something" src="/IMAGES/1_Header/1_header_images/Loup.png">
+			</span>
 
-			<div>
-				<span>
-					<img alt="Cart shows the added goods" src="/IMAGES/1_Header/1_header_images/Cart.png">
-				</span>
-			</div>
+			<span>
+				<img alt="Cart shows the added goods" src="/IMAGES/1_Header/1_header_images/Cart.png">
+			</span>
 		</div>
 
 		<!--BUTTON CALL-->
-		<button class="ml-[45px] w-[226px] h-[47px] text-center border-none bg-red-600">
-			<span class="text-lg font-medium text-white">
-				Телефонувати
-			</span>
+		<button
+			class="ml-[45px] w-[226px] h-[47px] text-lg font-medium text-white text-center border-none bg-gradient-to-tl from-yellow-500 via-pink-700 to-red-600">
+			Телефонувати
 		</button>
+	</header>
 
-		<!--MAIN-->
-		<main class="w-[1440px] h-max mt-[82px] mb-[150px]">
-			<div class="inline-flex flex-row gap-[18px] w-[1240px] h-max mx-[100px]">
 
-				<!--GOODS-->
-				<section class="float-left">
-					<!--Heading in main-->
-					<div class="inline-flex flex-row items-center w-[925px] h-[54px]">
-						<!--Gravel washes-->
-						<div class="w-max h-max mr-auto">
-							<span class="font-semibold text-[32px]">
-								Гранітні мийки
-							</span>
-						</div>
+	<!--MAIN-->
+	<main class="w-[1440px] h-max mt-[82px] mb-[150px]">
+		<div class="inline-flex flex-row gap-[18px] w-[1240px] h-max mx-[100px]">
 
-						<!--Goods-->
-						<div class="w-max mr-[20px]">
-							<span class="font-sans font-bold text-lg text-red-600" id="goods_amount">
-								23 товара
-							</span>
-						</div>
-
-						<!--Sorting by-->
-						<div class="overflow-hidden w-[295px] h-full bg-white shadow-black shadow-md">
-							<form>
-								<label>
-									<select
-										class="w-[245px] h-max font-sans font-bold text-lg my-4 mx-[25px] bg-white border-none outline-none scroll-smooth">
-										<option value="" disabled selected hidden>Сортувати за</option>
-										<option value="sort" selected>Звичайне</option>
-										<option value="sort">Спочатку дешеві</option>
-										<option value="sort">Спочатку дорогі</option>
-									</select>
-								</label>
-							</form>
-						</div>
+			<!--GOODS-->
+			<section class="float-left">
+				<!--Heading in main-->
+				<div class="inline-flex flex-row items-center w-[925px] h-[54px]">
+					<!--Gravel washes-->
+					<div class="w-max h-max mr-auto">
+						<span
+							class="font-semibold text-[32px] bg-gradient-to-br from-amber-500 to-pink-500 inline-block text-transparent bg-clip-text">
+							Гранітні мийки
+						</span>
 					</div>
 
-					<!--Product catalog-->
-					<div class="w-[923px] h-max mt-[25px] bg-transparent">
-						<!--GRID CONTAINER-->
-						<div class="inline-grid grid-cols-3 gap-[20px]" id="products_area">
-							<!--GRID ITEMS-->
+					<!-- Amount of goods -->
+					<div class="w-max mr-[20px]">
+						<span
+							class="font-sans font-bold text-lg bg-gradient-to-tr from-yellow-400 via-green-600 to-blue-700 text-transparent bg-clip-text"
+							id="goods_amount">
+							23 товара
+						</span>
+					</div>
 
-							<!--Grid item 1-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+					<!--Sorting by-->
+
+					<select class="w-[297px] px-5 h-full bg-gradient-to-tr from-slate-800 to-slate-700 shadow-black shadow-sm 
+							font-sans font-bold text-lg text-white ">
+						<option disabled selected hidden>Сортувати за</option>
+						<option class="bg-slate-700">Звичайне</option>
+						<option class="bg-slate-700">Спочатку дешеві</option>
+						<option class="bg-slate-700" value="sort ">Спочатку дорогі</option>
+					</select>
+				</div>
+
+				<!--Product catalog-->
+				<div class="w-[923px] h-max mt-[25px] bg-transparent">
+					<!--GRID CONTAINER-->
+					<div class="inline-grid grid-cols-3 gap-[20px]" id="products_area">
+						<!--GRID ITEMS-->
+
+						<!--Grid item 1-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/SingleWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/SingleWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з однією чашею
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.40 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з однією чашею
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													5 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.40 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														5 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 2-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 2-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/DoubleWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/DoubleWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з двома чашами
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.80 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з двома чашами
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													11 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.80 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														11 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 3-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 3-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/SingleLargerWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/SingleLargerWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з однією чашею
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.60 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з однією чашею
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													7 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.60 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														7 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 4-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 4-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/DoubleWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/DoubleWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з двома чашами
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.80 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з двома чашами
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													11 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.80 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														11 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 5-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 5-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/SingleLargerWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/SingleLargerWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з однією чашею
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.60 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з однією чашею
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													7 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.60 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														7 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 6-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 6-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/SingleWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/SingleWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з однією чашею
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.40 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з однією чашею
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													5 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.40 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														5 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 7-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 7-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/SingleLargerWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/SingleLargerWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з однією чашею
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.60 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з однією чашею
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													7 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.60 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														7 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 8-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 8-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/SingleWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/SingleWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з однією чашею
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.40 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з однією чашею
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													5 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.40 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														5 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
 
-							<!--Grid item 9-->
-							<div class="grid-item">
-								<div class="product">
-									<div class="product_heading">
-										<div class="product_new">
-											<span class="span_prod_new">
-												НОВЕ
-											</span>
-										</div>
-										<div class="product_heart">
-											<span class="span_prod_heart">
-												<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
-											</span>
-										</div>
+						<!--Grid item 9-->
+						<div class="w-[295px] h-[462px] shadow-xl bg-slate-300 inline-flex justify-center items-center">
+							<div class="w-[261px] h-[422px]">
+								<div class="inline-flex w-full justify-between items-center">
+									<div class="w-max px-4 py-1 text-white bg-gradient-to-br from-red-500 to-pink-500">
+										<span class="font-sans font-medium text-sm">
+											НОВЕ
+										</span>
+									</div>
+									<div class="product_heart">
+										<span class="span_prod_heart">
+											<img src="/IMAGES/2_Main/Catalog_images/Prod_Heart.png" alt="Product heart">
+										</span>
+									</div>
+								</div>
+
+								<div class="w-full h-max mt-[13px] inline-flex flex-col gap-2 justify-center">
+									<!--img-->
+									<div class="w-full h-[214px] inline-flex justify-center items-center">
+										<img src="/IMAGES/2_Main/Catalog_images/DoubleWash.png" alt="">
 									</div>
 
-									<div class="product_box">
-										<!--img-->
-										<div class="product_img">
-											<img src="/IMAGES/2_Main/Catalog_images/DoubleWash.png" alt="">
+									<!--content-->
+									<div class="w-full h-max inline-flex flex-col items-center gap-[14px]">
+										<!--name producer model-->
+										<div class="w-[70%] h-max inline-flex flex-col items-center">
+											<!--wash name-->
+											<span
+												class="font-sans font-semibold text-base text-center bg-gradient-to-tr from-green-600 to-blue-600 bg-clip-text text-transparent">
+												Гранітна мийка з двома чашами
+											</span>
+
+											<!--product producer-->
+											<span class="font-normal text-sm text-red-700 ">
+												_MAESTRO
+											</span>
+
+											<!--product model-->
+											<span class="font-bold text-sm text-yellow-800">
+												Radea R10 40.80 M-TG
+											</span>
 										</div>
 
-										<!--content-->
-										<div class="product-cont">
-											<!--name producer model-->
-											<div class="product_label_main_info">
-												<!--wash name-->
-												<span class="product_wash_name">
-													Гранітна мийка з двома чашами
+										<!--price-->
+										<div class="w-full h-[60px] inline-flex gap justify-between items-center">
+											<div class="w-max h-max font-sans inline-flex flex-col gap-[6px]">
+												<span class="font-bold text-xl">
+													11 999 грн
 												</span>
-
-												<!--product producer-->
-												<span class="product_producer_name">
-													_MAESTRO
-												</span>
-
-												<!--product model-->
-												<span class="product_model_name">
-													Radea R10 40.80 M-TG
+												<span class="font-medium text-sm text-red-700">
+													В наявності
 												</span>
 											</div>
 
-											<!--price-->
-											<div class="product_buy_info">
-												<div class="product_label_buy_info">
-													<span class="price">
-														11 999 грн
-													</span>
-													<span class="inStock">
-														В наявності
-													</span>
-												</div>
-
-												<div class="add_to_cart">
-													<button class="add_product_to_cart">
-														<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
-															alt="add to cart button with image inside">
-													</button>
-												</div>
+											<div class="add_to_cart">
+												<button class="add_product_to_cart">
+													<img src="/IMAGES/2_Main/Catalog_images/CartBtn.png"
+														alt="add to cart button with image inside">
+												</button>
 											</div>
 										</div>
 									</div>
@@ -738,407 +732,408 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<!--FILTER-->
-				<section class="filter">
-					<!--Filter heading-->
-					<div class="filter_heading">
-						<div class="filter_heading_label">
-							<span>
-								Фільтрування
-							</span>
-							<img src="/IMAGES/2_Main/Filter_images/Bin.png" alt="Remove all filters which user has chose">
-						</div>
+			<!--FILTER-->
+			<section class="filter">
+				<!--Filter heading-->
+				<div class="filter_heading">
+					<div class="filter_heading_label">
+						<span>
+							Фільтрування
+						</span>
+						<img src="/IMAGES/2_Main/Filter_images/Bin.png" alt="Remove all filters which user has chose">
 					</div>
+				</div>
 
-					<!--Filter box-->
-					<div class="filter_box">
-						<div class="filters">
+				<!--Filter box-->
+				<div class="filter_box">
+					<div class="filters">
 
-							<!--Price tag slider-->
-							<div class="price_tag_slider_filter">
-								<details id="details_price_tag_slider" open>
-									<summary>
-										Ціна
-									</summary>
+						<!--Price tag slider-->
+						<div class="price_tag_slider_filter">
+							<details id="details_price_tag_slider" open>
+								<summary>
+									Ціна
+								</summary>
 
-									<!--Show from min to max price-->
-									<div class="price-content">
-										<div class="min-value-range">
-											<p id="min-value">5000</p>
-										</div>
-
-										<!--Dash-->
-										<p id="dash"></p>
-
-										<div class="max-value-range">
-											<p id="max-value">12000</p>
-										</div>
+								<!--Show from min to max price-->
+								<div class="price-content">
+									<div class="min-value-range">
+										<p id="min-value">5000</p>
 									</div>
 
-									<!--Range slider-->
-									<div class="range-slider">
-										<div class="range-fill"></div>
+									<!--Dash-->
+									<p id="dash"></p>
 
+									<div class="max-value-range">
+										<p id="max-value">12000</p>
+									</div>
+								</div>
+
+								<!--Range slider-->
+								<div class="range-slider">
+									<div class="range-fill"></div>
+
+									<label>
+										<input type="range" class="min-price" value="6000" min="5000" max="13000" step="20" />
+									</label>
+									<label>
+										<input type="range" class="max-price" value="12000" min="5000" max="13000" step="20" />
+									</label>
+								</div>
+							</details>
+
+						</div>
+
+
+						<!--Material-->
+						<div class="material_filter">
+							<details id="details_material" open>
+								<summary>
+									Матеріал
+								</summary>
+
+								<form class="details_material_checkbox">
+									<div class="iron material_line">
 										<label>
-											<input type="range" class="min-price" value="6000" min="5000" max="13000" step="20" />
+											<input type="checkbox">
 										</label>
-										<label>
-											<input type="range" class="max-price" value="12000" min="5000" max="13000" step="20" />
-										</label>
+										<span>Метал</span>
 									</div>
-								</details>
 
-							</div>
+									<div class="gravel material_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Граніт</span>
+									</div>
 
+									<div class="ceramic material_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Кераміка</span>
+									</div>
 
-							<!--Material-->
-							<div class="material_filter">
-								<details id="details_material" open>
-									<summary>
-										Матеріал
-									</summary>
-
-									<form class="details_material_checkbox">
-										<div class="iron material_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Метал</span>
-										</div>
-
-										<div class="gravel material_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Граніт</span>
-										</div>
-
-										<div class="ceramic material_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Кераміка</span>
-										</div>
-
-										<div class="cement material_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Бетон</span>
-										</div>
-									</form>
-								</details>
-							</div>
+									<div class="cement material_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Бетон</span>
+									</div>
+								</form>
+							</details>
+						</div>
 
 
-							<!--Country-->
-							<div class="country_filter">
-								<details id="details_country" open>
-									<summary>
-										Країна
-									</summary>
+						<!--Country-->
+						<div class="country_filter">
+							<details id="details_country" open>
+								<summary>
+									Країна
+								</summary>
 
-									<form class="details_country_checkbox">
-										<div class="ukraine country_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Україна</span>
-										</div>
+								<form class="details_country_checkbox">
+									<div class="ukraine country_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Україна</span>
+									</div>
 
-										<div class="china country_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Китай</span>
-										</div>
+									<div class="china country_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Китай</span>
+									</div>
 
-										<div class="france country_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Франція</span>
-										</div>
+									<div class="france country_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Франція</span>
+									</div>
 
-										<div class="germany country_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Германія</span>
-										</div>
+									<div class="germany country_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Германія</span>
+									</div>
 
-										<div class="italy country_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Італія</span>
-										</div>
+									<div class="italy country_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Італія</span>
+									</div>
 
-										<div class="poland country_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Польща</span>
-										</div>
-									</form>
-								</details>
-							</div>
+									<div class="poland country_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Польща</span>
+									</div>
+								</form>
+							</details>
+						</div>
 
 
-							<!--Color-->
-							<div class="color_filter">
-								<details id="details_color" open>
-									<summary>
-										Колір
-									</summary>
+						<!--Color-->
+						<div class="color_filter">
+							<details id="details_color" open>
+								<summary>
+									Колір
+								</summary>
 
-									<form class="details_color_checkbox">
-										<div class="white color_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Білий</span>
-										</div>
+								<form class="details_color_checkbox">
+									<div class="white color_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Білий</span>
+									</div>
 
-										<div class="black color_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Чорний</span>
-										</div>
+									<div class="black color_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Чорний</span>
+									</div>
 
-										<div class="red color_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Червоний</span>
-										</div>
+									<div class="red color_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Червоний</span>
+									</div>
 
-										<div class="grey color_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Сірий</span>
-										</div>
+									<div class="grey color_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Сірий</span>
+									</div>
 
-										<div class="green color_line">
-											<label>
-												<input type="checkbox">
-											</label>
-											<span>Зелений</span>
-										</div>
-									</form>
-								</details>
-							</div>
+									<div class="green color_line">
+										<label>
+											<input type="checkbox">
+										</label>
+										<span>Зелений</span>
+									</div>
+								</form>
+							</details>
 						</div>
 					</div>
-				</section>
-			</div>
-		</main>
+				</div>
+			</section>
+		</div>
+	</main>
 
 
-		<!--FOOTER-->
-		<footer class="footer">
-			<!--LOGO-->
-			<div class="footer_label_logo">
+	<!--FOOTER-->
+	<footer class="footer">
+		<!--LOGO-->
+		<div class="footer_label_logo">
+			<span>
+				LOGO
+			</span>
+		</div>
+
+		<!--SECTION LOCATION-->
+		<section class="footer_location">
+			<!--Label location-->
+			<div class="label_location">
 				<span>
-					LOGO
+					location
 				</span>
 			</div>
 
-			<!--SECTION LOCATION-->
-			<section class="footer_location">
-				<!--Label location-->
-				<div class="label_location">
+			<!--Point 1-->
+			<div class="point1 point">
+				<!--Icon point 1-->
+				<div class="icon_point">
 					<span>
-						location
+						<img src="/IMAGES/3_Footer/Point.png" alt="Point1 location">
 					</span>
 				</div>
 
-				<!--Point 1-->
-				<div class="point1 point">
-					<!--Icon point 1-->
-					<div class="icon_point">
+				<!--Address 1-->
+				<div class="address">
+					<span>
+						Wisconsin Ave, Suite 700
+						Chevy Chase, Maryland 20815
+					</span>
+				</div>
+			</div>
+
+			<!--Point 2-->
+			<div class="point2 point">
+				<!--Icon point 2-->
+				<div class="icon_point">
+					<span>
+						<img src="/IMAGES/3_Footer/Point.png" alt="Point2 location">
+					</span>
+				</div>
+
+				<!--Address 2-->
+				<div class="address">
+					<span>
+						Wisconsin Ave, Suite 700
+						Chevy Chase, Maryland 20815
+					</span>
+				</div>
+			</div>
+
+			<!--Point 3-->
+			<div class="point3 point">
+				<!--Icon point 3-->
+				<div class="icon_point">
+					<span>
+						<img src="/IMAGES/3_Footer/Point.png" alt="Point3 location">
+					</span>
+				</div>
+
+				<!--Address 3-->
+				<div class="address">
+					<span>
+						Wisconsin Ave, Suite 700
+						Chevy Chase, Maryland 20815
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<!--SECTION QUICK INFO-->
+		<section class="footer_quick_info">
+			<div class="footer_catalog" id="footer_catalog">
+				<button>
+					<span>
+						Каталог
+					</span>
+				</button>
+			</div>
+			<div class="footer_about_us" id="footer_about_us">
+				<button>
+					<span>
+						Про нас
+					</span>
+				</button>
+			</div>
+			<div class="footer_contacts" id="footer_contacts">
+				<button>
+					<span>
+						Контакти
+					</span>
+				</button>
+			</div>
+			<div class="footer_faq" id="footer_faq">
+				<button>
+					<span>
+						FAQ
+					</span>
+				</button>
+			</div>
+
+		</section>
+
+		<!--SECTION ANOTHER INFO-->
+		<section class="footer_another_info">
+			<!--CONTACT US-->
+			<div class="footer_contact_us">
+				<!--Label contact us-->
+				<div class="footer_label_contact_us">
+					<span>
+						Contact us
+					</span>
+				</div>
+
+				<!--Gmail icon-->
+				<div class="gmail">
+					<!--Icon Gmail-->
+					<div class="icon_gmail">
 						<span>
-							<img src="/IMAGES/3_Footer/Point.png" alt="Point1 location">
+							<img src="/IMAGES/3_Footer/Gmail.png" alt="Gmail">
 						</span>
 					</div>
 
-					<!--Address 1-->
-					<div class="address">
+					<!--Label Gmail-->
+					<div class="label_gmail">
 						<span>
-							Wisconsin Ave, Suite 700
-							Chevy Chase, Maryland 20815
+							logo@figma.com
 						</span>
 					</div>
 				</div>
 
-				<!--Point 2-->
-				<div class="point2 point">
-					<!--Icon point 2-->
-					<div class="icon_point">
+				<!--Phone number-->
+				<div class="phone">
+					<!--Icon Phone-->
+					<div class="icon_phone">
 						<span>
-							<img src="/IMAGES/3_Footer/Point.png" alt="Point2 location">
+							<img src="/IMAGES/3_Footer/Phone.png" alt="Gmail">
 						</span>
 					</div>
 
-					<!--Address 2-->
-					<div class="address">
+					<!--Label phone number-->
+					<div class="label_phone">
 						<span>
-							Wisconsin Ave, Suite 700
-							Chevy Chase, Maryland 20815
-						</span>
-					</div>
-				</div>
-
-				<!--Point 3-->
-				<div class="point3 point">
-					<!--Icon point 3-->
-					<div class="icon_point">
-						<span>
-							<img src="/IMAGES/3_Footer/Point.png" alt="Point3 location">
-						</span>
-					</div>
-
-					<!--Address 3-->
-					<div class="address">
-						<span>
-							Wisconsin Ave, Suite 700
-							Chevy Chase, Maryland 20815
+							+3800065628
 						</span>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<!--SECTION QUICK INFO-->
-			<section class="footer_quick_info">
-				<div class="footer_catalog" id="footer_catalog">
-					<button>
-						<span>
-							Каталог
-						</span>
-					</button>
-				</div>
-				<div class="footer_about_us" id="footer_about_us">
-					<button>
-						<span>
-							Про нас
-						</span>
-					</button>
-				</div>
-				<div class="footer_contacts" id="footer_contacts">
-					<button>
-						<span>
-							Контакти
-						</span>
-					</button>
-				</div>
-				<div class="footer_faq" id="footer_faq">
-					<button>
-						<span>
-							FAQ
-						</span>
-					</button>
+			<!--FOLLOW US-->
+			<div class="footer_follow_us">
+				<!--Label follow us-->
+				<div class="footer_label_follow_us">
+					<span>
+						Follow us
+					</span>
 				</div>
 
-			</section>
-
-			<!--SECTION ANOTHER INFO-->
-			<section class="footer_another_info">
-				<!--CONTACT US-->
-				<div class="footer_contact_us">
-					<!--Label contact us-->
-					<div class="footer_label_contact_us">
+				<!--Social images-->
+				<div class="footer_social_follow_us row">
+					<!--Facebook-->
+					<div class="facebook column">
 						<span>
-							Contact us
+							<img src="/IMAGES/3_Footer/Facebook.png" alt="Facebook">
 						</span>
 					</div>
 
-					<!--Gmail icon-->
-					<div class="gmail">
-						<!--Icon Gmail-->
-						<div class="icon_gmail">
-							<span>
-								<img src="/IMAGES/3_Footer/Gmail.png" alt="Gmail">
-							</span>
-						</div>
-
-						<!--Label Gmail-->
-						<div class="label_gmail">
-							<span>
-								logo@figma.com
-							</span>
-						</div>
-					</div>
-
-					<!--Phone number-->
-					<div class="phone">
-						<!--Icon Phone-->
-						<div class="icon_phone">
-							<span>
-								<img src="/IMAGES/3_Footer/Phone.png" alt="Gmail">
-							</span>
-						</div>
-
-						<!--Label phone number-->
-						<div class="label_phone">
-							<span>
-								+3800065628
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<!--FOLLOW US-->
-				<div class="footer_follow_us">
-					<!--Label follow us-->
-					<div class="footer_label_follow_us">
+					<!--Telegram-->
+					<div class="telegram column">
 						<span>
-							Follow us
+							<img src="/IMAGES/3_Footer/Telegram.png" alt="Telegram">
 						</span>
 					</div>
 
-					<!--Social images-->
-					<div class="footer_social_follow_us row">
-						<!--Facebook-->
-						<div class="facebook column">
-							<span>
-								<img src="/IMAGES/3_Footer/Facebook.png" alt="Facebook">
-							</span>
-						</div>
-
-						<!--Telegram-->
-						<div class="telegram column">
-							<span>
-								<img src="/IMAGES/3_Footer/Telegram.png" alt="Telegram">
-							</span>
-						</div>
-
-						<!--Instagram-->
-						<div class="instagram column">
-							<span>
-								<img src="/IMAGES/3_Footer/Instagram.png" alt="Instagram">
-							</span>
-						</div>
+					<!--Instagram-->
+					<div class="instagram column">
+						<span>
+							<img src="/IMAGES/3_Footer/Instagram.png" alt="Instagram">
+						</span>
 					</div>
 				</div>
-			</section>
-		</footer>
+			</div>
+		</section>
+	</footer>
 
 
-		<!--JAVA SCRIPT-->
+	<!--JAVA SCRIPT-->
 
-		<!--1_Header-->
-		<script src="/3_JS/1_Header/Header.js"></script>
+	<!--1_Header-->
+	<script src="/3_JS/1_Header/Header.js"></script>
 
-		<!--2_Main-->
-		<!--<script src="/3_JS/2_Main/Catalog/Product_.js"></script>-->
-		<script src="/3_JS/2_Main/Filter/Price.js"></script>
+	<!--2_Main-->
+	<!--<script src="/3_JS/2_Main/Catalog/Product_.js"></script>-->
+	<script src="/3_JS/2_Main/Filter/Price.js"></script>
 
-		<!--3_Footer-->
-		<script src="/3_JS/3_Footer/Footer.js"></script>
+	<!--3_Footer-->
+	<script src="/3_JS/3_Footer/Footer.js"></script>
 
 </body>
 

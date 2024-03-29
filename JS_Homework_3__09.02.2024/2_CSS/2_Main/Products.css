@@ -1,0 +1,16 @@
+.add_product_to_cart {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    transition: transform .7s ease-in;
+}
+
+.add_product_to_cart:hover {
+    transform: rotate(360deg);
+}
+
+.add_product_to_cart>image {
+    width: 60px;
+    height: 60px;
+}
